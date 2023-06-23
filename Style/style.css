@@ -1,0 +1,120 @@
+/*File: style.css
+GUI Assignment: HW 3-Create multiplication table
+Victoria Munroe victoria_munroe@student.uml.edu
+Description: Website to take input & return multiplication table
+This page holds the css
+
+Copyright (c) 2023 by VMunroe. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+created by VM 06/15/23
+
+Sources: 
+w3Schools w3schools.com
+tutorialrepublic.com/faq/how-to-get-the-value-in-an-input-text-box-using-jquery.php#:~:text=Answer%3A%20Use%20the%20jQuery%20val,in%20an%20alert%20dialog%20box.
+TutorialsPoint 
+geeksForgeeks.com
+https://jquery.com/
+sitepoint.com/basic-jquery-form-validation-tutorial/
+Traversy https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4419s
+https://stackoverflow.com/questions/19625646/javascript-adding-an-id-attribute-to-another-created-element
+https://stackoverflow.com/questions/27392899/rows-disappearing-when-adding-them-dynamically-to-table-with-js-jquery
+https://stackoverflow.com/questions/38447344/create-jquery-validate-rule-for-positive-whole-numbers
+*/
+
+/* General Formatting */
+body{
+    height: 100%;
+    width: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2%;
+    background-image: url("../Images/background.png");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:rgb(7, 116, 116);
+    font-style: bold;
+
+}
+
+div {
+    margin: 0 auto;
+    width: max-content;
+    
+}
+/* Numbers Input */
+#numberInput{
+    width:max-content;
+    padding: 5% 10%;
+    border-style: solid;
+    text-align: left;
+    display: table;
+}
+#numberInput div{
+	display: table-row;
+}
+#numberInput label{
+	display: table-cell;
+}
+#numberInput input{
+	display: table-cell;
+}
+
+.AAAAH{
+    float:left;
+}
+/* Table */
+/* #mlttable{
+    overflow: auto;
+    white-space: nowrap;
+
+    max-width: 100px;
+}  */
+table {
+    width: 100%;
+}
+
+#tblcont{
+	overflow: auto;
+    width: 600px;
+	height: 300px;
+    border-style: solid;
+    border:black;
+}
+
+#tblcont thead th{
+    position: sticky;
+    top: 0px;
+	background: #ffff;
+}
+
+#tblcont td.headers{
+    position: sticky;
+    left: 0px;
+	background: #ffff;
+}
+
+
+tr:nth-child(even) {
+    background-color: lightsteelblue;
+}
+tr:nth-child(odd) {
+    background-color:lightgrey;
+}
+
+
+#info{
+    font-style: italic;
+    clear: both;
+}
+
+
+
+tr:first-child, td:first-child{
+    font-weight: bold;
+    background-color: white;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
